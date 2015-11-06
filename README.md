@@ -1,5 +1,5 @@
 # jsDigits
-Adds objects of type Hex, Binary, and Octal, and gives easy conversion between all three and Decimal base.
+Adds objects of type Hex, Binary, and Octal, and gives easy conversion between all three and Decimal base. No unsigned integers so far. More functions beyond add to be added.
 
 ### Examples
 
