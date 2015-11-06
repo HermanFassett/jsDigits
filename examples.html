@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="jsdigits-0.0.1.min.js"></script>
+  </head>
+  <body>
+    <p id="cont"></p>
+    <script> 
+      var p = document.getElementById("cont");
+      var a = new Binary(1000).toDecimal().toString();
+      p.innerText += a + "\n";
+      a = new Hex("A7H");
+      a = a.add(new Hex([10, 0]));
+      p.innerText += a + "\n";
+      a = new Hex(100);
+      a = a.toBinary();
+      p.innerText += a + "\n"
+      a = new Hex(10);
+      var b = new Binary(10);
+      var c = new Octal(10);
+      var d = Number(10);
+      a = new Hex((a.toDecimal() + b.toDecimal() + c.toDecimal() + d).toHex());
+      p.innerText += a;
+    </script>
+  </body>
+</html>
