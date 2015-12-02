@@ -48,7 +48,7 @@ var Octal = function(value) {
         return toBase(this.value, 10, this.BASE);
     };
     Octal.prototype.toHex = function() {
-        this.toDecimal.toHex();
+        return this.toDecimal().toHex();
     };
     Octal.prototype.add = function(a) {
         return new Octal((this.toDecimal() + a.toDecimal()).toOctal());
